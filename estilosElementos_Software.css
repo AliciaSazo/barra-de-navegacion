@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 7, 4, 0.8), rgba(65, 35, 65, 0.8)), url(vivero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.barra_nav
+{
+    width: 88%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra_nav ul li
+{
+    list-style: none;/*no muestra el bullet point al lado de cada elemento de la lista*/
+    display: inline-block;/*cada link o enlace este uno al lado del otro*/
+    margin: 0 20px;
+    position: relative;
+}
+
+.barra_nav ul li a
+{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+
+}
+
+.barra_nav ul li::before
+{
+    content:"";
+    height: 3px;
+    width: 100%;
+    background-color: rgb(19, 71, 37);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+}
+
+
